@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: nl5py
+Version: 3.0.1
+Summary: python binding for nl5 dll
+Home-page: https://sidelinesoft.com/nl5/
+Author: Sidelinesoft
+Author-email: nl5@sidelinesoft.com
+License: proprietary
+Description: nl5py is a python binding file for NL5 DLL.  nl5py leverages the library 'ctypes', allowing NL5 DLL to be used with python.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
