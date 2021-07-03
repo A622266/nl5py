@@ -32,7 +32,7 @@ def NL5_GetInfo():
 def NL5_GetLicense(license_name):
     nl5.NL5_GetLicense.argtypes = [ct.c_char_p]
     nl5.NL5_GetLicense.restype = ct.c_int      
-    return nl5.NL5_GetLicense()
+    return nl5.NL5_GetLicense(license_name)
 
 def NL5_Open(ncir):
     nl5.NL5_Open.argtypes = [ct.c_char_p] 
