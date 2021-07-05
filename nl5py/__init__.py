@@ -202,7 +202,6 @@ def NL5_DeleteOldData(ncir):
 def NL5_GetInput(ncir, name):
     nl5.NL5_GetInput.argtypes = [ct.c_int, ct.c_char_p] 
     nl5.NL5_GetInput.restype = ct.c_int
-    nl5.NL5_GetInput(ncir, name)
     return nl5.NL5_GetInput(ncir, name)
       
 def NL5_SetInputValue(ncir, nin, v):
