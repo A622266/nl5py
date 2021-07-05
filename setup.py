@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="nl5py",
-    version="3.1.3",
+    version="3.1.4",
     description="python binding for nl5 dll",
     long_description=README,
     url="https://sidelinesoft.com/nl5/",
