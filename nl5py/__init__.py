@@ -167,7 +167,7 @@ def NL5_SimulateInterval(ncir, interval):
 def NL5_SimulateStep(ncir):
     nl5.NL5_SimulateStep.argtypes = [ct.c_int] 
     nl5.NL5_SimulateStep.restype = ct.c_int
-    return nl5.NL5_Simulate(ncir)
+    return nl5.NL5_SimulateStep(ncir)
         
 def NL5_SaveIC(ncir):
     nl5.NL5_SaveIC.argtypes = [ct.c_int] 
