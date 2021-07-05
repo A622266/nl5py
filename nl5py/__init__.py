@@ -29,15 +29,15 @@ def NL5_GetInfo():
     nl5.NL5_GetInfo.restype = ct.c_char_p
     return nl5.NL5_GetInfo()
 
-def NL5_GetLicense(license_name):
+def NL5_GetLicense(name):
     nl5.NL5_GetLicense.argtypes = [ct.c_char_p]
     nl5.NL5_GetLicense.restype = ct.c_int      
-    return nl5.NL5_GetLicense(license_name)
+    return nl5.NL5_GetLicense(name)
 
-def NL5_Open(ncir):
+def NL5_Open(name):
     nl5.NL5_Open.argtypes = [ct.c_char_p] 
     nl5.NL5_Open.restype = ct.c_int
-    return nl5.NL5_Open(ncir)
+    return nl5.NL5_Open(name)
 
 def NL5_Close(ncir):
     nl5.NL5_Close.argtypes = [ct.c_int] 
