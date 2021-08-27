@@ -97,7 +97,7 @@ def NL5_GetParamText(ncir, npar, text, length):
 def NL5_SetParamText(ncir, npar, text):
     nl5.NL5_SetParamText.argtypes = [ct.c_int, ct.c_int, ct.c_char_p]
     nl5.NL5_SetParamText.restype = ct.c_int
-    return nl5.NL5_ParamText(ncir, npar, text)
+    return nl5.NL5_SetParamText(ncir, npar, text)
         
 def NL5_GetTrace(ncir, name):
     nl5.NL5_GetTrace.argtypes = [ct.c_int, ct.c_char_p] 
@@ -112,7 +112,7 @@ def NL5_AddVTrace(ncir, name):
 def NL5_AddITrace(ncir, name):
     nl5.NL5_AddITrace.argtypes = [ct.c_int, ct.c_char_p] 
     nl5.NL5_AddITrace.restype = ct.c_int
-    return nl5.NL5_ADDITrace(ncir, name)
+    return nl5.NL5_AddITrace(ncir, name)
         
 def NL5_AddPTrace(ncir, name):
     nl5.NL5_AddPTrace.argtypes = [ct.c_int, ct.c_char_p] 
