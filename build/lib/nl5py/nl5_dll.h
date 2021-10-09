@@ -23,7 +23,7 @@
 
 IMP_EXP char* NL5_GetError();
 IMP_EXP char* NL5_GetInfo();
-IMP_EXP int NL5_GetLicense();
+IMP_EXP int NL5_GetLicense(char* name);
 
 IMP_EXP int NL5_Open(char* name);
 IMP_EXP int NL5_Close(int ncir);
