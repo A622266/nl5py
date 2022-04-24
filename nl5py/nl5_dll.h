@@ -71,6 +71,11 @@ IMP_EXP int NL5_GetOutput(int ncir, char* name);
 IMP_EXP int NL5_GetOutputValue(int ncir, int nout, double* v);
 IMP_EXP int NL5_GetOutputLogicalValue(int ncir, int nout, int* i);
 
+IMP_EXP int NL5_CalcAC(int ncir);
+IMP_EXP int NL5_GetACTrace(int ncir, char* name);
+IMP_EXP int NL5_GetACDataSize(int ncir, int ntrace);
+IMP_EXP int NL5_GetACDataAt(int ncir, int ntrace, int n, double* f, double* mag, double* phase);
+
   #ifdef __cplusplus
 }
   #endif // __cplusplus

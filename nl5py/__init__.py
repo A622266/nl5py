@@ -228,3 +228,23 @@ def NL5_GetOutputLogicalValue(ncir, nout, i):
     nl5.NL5_GetOutputLogicalValue.argtypes = [ct.c_int, ct.c_int, ct.POINTER(ct.c_int)]
     nl5.NL5_GetOutputLogicalValue.restype = ct.c_int
     return nl5.NL5_GetOutputLogicalValue(ncir, nout, i)
+
+def NL5_CalcAC(ncir):
+    nl5.NL5_CalcAC.argtypes = [ct.c_int] 
+    nl5.NL5_CalcAC.restype = ct.c_int
+    return nl5.NL5_CalcAC(ncir)
+    
+def NL5_GetACTrace(ncir, name):
+    nl5.NL5_GetACTrace.argtypes = [ct.c_int, ct.c_char_p] 
+    nl5.NL5_GetACTrace.restype = ct.c_int
+    return nl5.NL5_GetACTrace(ncir, name)
+    
+def NL5_GetACDataSize(ncir, ntrace):
+    nl5.NL5_GetACDataSize.argtypes = [ct.c_int, ct.c_int] 
+    nl5.NL5_GetACDataSize.restype = ct.c_int
+    return nl5.NL5_GetACDataSize(ncir, ntrace)
+  
+def NL5_GetACDataAt(ncir, ntrace, n, f, mag, phase):
+    nl5.NL5_GetACDataAt.argtypes = [ct.c_int, ct.c_int, ct.c_int, ct.POINTER(ct.c_double), ct.POINTER(ct.c_double), ct.POINTER(ct.c_double)]
+    nl5.NL5_GetACDataAt.restype = ct.c_int
+    return nl5.NL5_GetACDataAt(ncir, ntrace, n, f, mag, phase)
